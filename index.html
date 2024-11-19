@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Generator</title>
+    <link rel="shortcut icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Place the sandbox attribute here -->
+    <iframe src="index.html" sandbox="allow-scripts allow-same-origin allow-downloads" hidden></iframe>
+
+    <header>
+        <h3>Anthony FanPage</h3>
+        <nav>
+            <a href=""> <img src="home.png" alt="" width="20"> Home</a>
+            <a href=""> <img src="about.png" alt="" width="20">About App</a>
+            <a href=""> <img src="setting.png" alt="" width="20">Settings</a>
+            <a href=""> <img src="download.png" alt="" width="20">Download App</a>
+            <a href=""> <img src="support.png" alt="" width="20">Tech Support</a>
+            <a href=""> <img src="donate.png" alt="" width="20">Donate</a>
+            <a href=""> <img src="contact.png" alt="" width="20">Contact us</a>
+        </nav>
+
+        <!-- menu icon -->
+        <img src="menu.png" alt="" width="25" class="menu-btn">
+    </header>
+
+    <main>
+        <form method="post">
+            <div class="profile-group">
+                <img src="avatar.png" alt="" width="100" height="100" class="profile-img">
+                <label for="file" class="upload-btn"><img src="upload.png" alt="" width="20"> Upload</label>
+                <input type="file" id="file">
+            </div>
+
+            <div class="input-group">
+                <label for="full-name">Name</label>
+                <input type="text" id="full-name" placeholder="e.g John Doe">
+            </div>
+
+            <div class="input-group">
+                <label for="job">Job Title</label>
+                <input type="text" id="job" placeholder="e.g Accountant">
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="e.g johndoe@company.com">
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="number" id="phone" placeholder="+1(xxx)-xxx-xxxx">
+            </div>
+
+            <div class="input-group">
+                <label for="relationship">Relationship</label>
+                <input type="text" id="relationship" placeholder="VIP fan, VVIP fan">
+            </div>
+
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="e.g 18+">
+            </div>
+
+            <span class="btn-group">
+                <button class="create-btn">Create →</button>
+                <button type="reset" class="discard-btn">Discard →</button>
+            </span>
+        </form>
+    </main>
+
+    <div style='display: flex; justify-content: center; align-items: center; padding: 10px 20px;'>
+        <div class="download-btn">Download Now</div>
+    </div>
+
+    <footer>
+        <p>&copy; Copyright 2024. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
